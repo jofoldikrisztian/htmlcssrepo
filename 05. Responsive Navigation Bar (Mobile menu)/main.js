@@ -12,3 +12,4 @@ $('.menu').on('click', function (){
 
     isActive = !isActive;
 });
+
