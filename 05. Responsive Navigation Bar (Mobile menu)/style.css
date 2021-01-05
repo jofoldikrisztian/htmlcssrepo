@@ -157,7 +157,7 @@ section h1{
 
 /* Search box */
 
-.search-box{
+#search-box{
     position: relative;
     margin: auto;
     height: 60px;
@@ -166,24 +166,23 @@ section h1{
     width: 600px;
   }
 
-  .search-box input{
+#search-box input{
     width: 100%;
     height: 100%;
     border: none;
     border-radius: 50px;
-    background: #fff;
     outline: none;
     padding: 0 60px 0 20px;
     font-size: 18px;
-    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
-  .search-box input::placeholder{
+  #search-box input::placeholder{
     color: #a6a6a6;
   }
 
 
-  .search-box .search-icon{
+  #search-box .search-icon{
     position: absolute;
     right: 0px;
     top: 50%;
@@ -200,7 +199,7 @@ section h1{
     transition:  font-size .5s, background .5s;
   }
 
-  .search-box .search-data{
+  #search-box .search-data{
     text-align: center;
     padding-top: 7px;
     color: #fff;
@@ -208,11 +207,17 @@ section h1{
     word-wrap: break-word;
   }
 
-  .search-box .search-icon:hover{
+  #search-box .search-icon:hover{
       font-size: 2.8rem;
       background:  #23D5AB;
   }
 
+
+ .onFocus input{
+      background: var(--dark-color);
+      color: var(--light-gray-color);
+      text-align: center;
+  }
 
   .scroll-down{
     position: absolute;
@@ -286,8 +291,12 @@ section h1{
 }
 
 @media screen and (max-width: 768px){
+/* 
+    header{
+     background-size: cover;   
+    } */
 
-    .search-box{
+    #search-box{
         width: 300px;
         height: 40px;
     }

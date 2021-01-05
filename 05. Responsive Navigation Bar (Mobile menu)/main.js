@@ -13,3 +13,17 @@ $('.menu').on('click', function (){
     isActive = !isActive;
 });
 
+
+
+var x = document.getElementById("search-box");
+
+x.addEventListener("focus", addFocusClass, true);
+x.addEventListener("blur", removeFocusClass, true);
+
+function addFocusClass() {
+    x.className += "onFocus";
+}
+
+function removeFocusClass() {
+    x.className = ""; 
+}

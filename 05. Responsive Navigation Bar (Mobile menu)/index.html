@@ -27,8 +27,8 @@
             </div>
         </nav>
         <div class="main-text">
-            <div class="search-box">
-                <input type="text" placeholder="Orvos, szakterület, város...">
+            <div id="search-box">
+                <input id="input-text" type="text" onblur="this.placeholder='Orvos, szakterület, város...'" onfocus="this.placeholder = ''">
                 <div class="search-icon">
                     <i class="fas fa-search"></i>
                 </div>
@@ -36,7 +36,11 @@
                 </div>
             </div>
             <h3>
-                <div class="">Lorem ipsum dolor sidignissimos corporis.</div>
+                <div class="">Magyarország orvos, és egészségügyi intézmény nyílvántartása.</div>
+            </h3>
+            <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+            <h3 style="padding-top: 10px; font-size: 2rem;">
+                <div>Keress, értékelj!</div>
             </h3>
         </div>
         <a href="#" class="scroll-down">
